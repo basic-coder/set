@@ -67,7 +67,7 @@ const Billings = () => {
         <p>Please be aware that cancelling your account will cause you to lose all of the save content and earned credit of the account.</p>
         <button>Cancel Account</button>
       </div>
-      
+
     </div>
   )
 }

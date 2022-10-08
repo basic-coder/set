@@ -1,0 +1,277 @@
+.plans-card h3 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 500;  
+    color: #c1c1c1;
+    font-size: 16px;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.plans-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.plans-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+.plans-options {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    border-top: 1px solid #c1c1c1;
+}
+
+.plan-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.plan-option-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    flex-direction: column;
+}
+
+.plan-option-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.plan-option-title h4 {
+    margin-left: 10px;
+}
+
+.plan-option-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 50px;
+}
+
+.plan-option-details h5{
+    font-weight: 500;  
+    color: #c1c1c1;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.plan-options-benefits p{
+    font-weight: 500;  
+    color: #c1c1c1;
+    font-size: 13px;
+    margin-bottom: 2px;
+}
+
+.plan-option-price {
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+.plan-option-price-text {
+    font-weight: 500;  
+    color: #c1c1c1;
+    font-size: 13px;
+}
+
+.plan-option-pricing span{
+    font-weight: 500;  
+    color: #c1c1c1;
+    font-size: 13px;
+}
+
+.plan-continue{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px ;
+    border-top: 1px solid #c1c1c1;
+}
+
+.plan-continue button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: white;
+    border: 1px solid #c1c1c1;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.credits-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.credits-container h3{
+    font-weight: 500;  
+    color: #c1c1c1;
+    font-size: 16px;
+}
+
+.credits-container span{
+    font-weight: 500;  
+    color: #c1c1c1;
+    font-size: 14px;
+}
+
+
+.review-container{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    flex-direction: column;
+    
+}
+
+.review-container .review-header{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-weight: 500;  
+    color: #c1c1c1;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
+.review-card{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    flex-direction: column;
+    margin-top: 30px;
+}
+.review-card-title{
+    font-weight: 600;  
+    color: #4c4c4c;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.review-card-text{
+    background-color: #e0e0e0;
+    font-weight: 500;  
+    color: #878787;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.review-boxes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+.review-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.review-box-title{
+    font-weight: 500;  
+    color: #878787;
+    font-size: 12px;
+}
+
+.review-box-text{
+    font-weight: 500;  
+    color: #878787;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.review-box-right span{
+    font-weight: 500;  
+    color: #878787;
+    font-size: 12px;
+}
+
+.end-review-box-title{
+    font-weight: 500;  
+    color: #878787;
+    font-size: 14px;
+}
+
+.end-review-box-right span{
+    font-weight: 500;  
+    color: #878787;
+    font-size: 14px;
+}
+
+.review-confirm{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    color: #ececec;
+    border-radius: 5px;
+}
+
+.payment-text{
+    margin-top: 30px;
+    font-weight: 500;  
+    color: #878787;
+    font-size: 14px;
+    text-align: center;
+}
