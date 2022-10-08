@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import Plans from '../plans/Plans'
 import './billings.css'
 
@@ -37,7 +38,7 @@ const Billings = () => {
           </div>
           <p className="cycle-text">Billing cycle renews in 29 days</p>
           <div className="edit-btns">
-            <button className='edit-payment-btn'>Edit payment details</button>
+            <Link className='edit-payment-btn' to='/stripe'>Edit payment details</Link>
             <button className='edit-plan-btn' onClick={()=>setToggle('false')}>Edit plan</button>
           </div>
           <div className="upgrade-box">
