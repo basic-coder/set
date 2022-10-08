@@ -68,6 +68,34 @@
     width: 100%;
 }
 
+    input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    input[type='radio']:checked:after {
+        width: 5px;
+        height: 5px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #fff;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 5px solid rgb(175, 32, 236);
+    }
+
 .plan-option-title h4 {
     margin-left: 10px;
 }
@@ -206,9 +234,82 @@
     font-weight: 500;  
     color: #878787;
     font-size: 12px;
-    padding: 5px;
+    padding: 5px 8px;
+    border-radius: 2px;
     border-radius: 2px;
 }
+
+/* switch */
+
+
+.toggle-switch {
+    position: relative;
+    width: 50px;
+    display: inline-block;
+    text-align: left;
+    }
+    .checkbox {
+    display: none;
+    }
+    .label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0 solid #bbb;
+    border-radius: 20px;
+    }
+    .inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+    }
+    .inner:before,
+    .inner:after {
+    float: left;
+    width: 50%;
+    height: 24px;
+    padding: 0;
+    line-height: 36px;
+    color: #fff;
+    font-weight: bold;
+    box-sizing: border-box;
+    }
+    .inner:before {
+    content: "";
+    padding-left: 10px;
+    background-color: #060;
+    color: #fff;
+    }
+    .inner:after {
+    content: "";
+    padding-right: 10px;
+    background-color: #bbb;
+    color: #fff;
+    text-align: right;
+    }
+    .switch {
+    display: block;
+    width: 15px;
+    height: 15px;
+    margin: 5px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 25px;
+    border: 0 solid #bbb;
+    border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+    }
+    .checkbox:checked + .label .inner {
+    margin-left: 0;
+    }
+    .checkbox:checked + .label .switch {
+    right: 0px;
+    }
+    
+
 
 .review-boxes{
     display: flex;
@@ -264,7 +365,7 @@
     padding: 5px;
     margin-top: 30px;
     background-color: #f9f9f9;
-    color: #ececec;
+    color: #e7e7e7;
     border-radius: 5px;
 }
 

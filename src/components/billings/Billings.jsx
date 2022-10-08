@@ -51,11 +51,11 @@ const Billings = () => {
 
         <div className="free-container">
           <div className="free-left">
-            <h3>Get 2 months free</h3>
+            <h3>Get 2 months free ✌</h3>
             <p>Pay annually to get 2 months free</p>
           </div>
           <div className="free-right">
-            <button className='view-btn'>View More</button>
+            <button className='view-btn'>View Details</button>
           </div>
         </div>
 

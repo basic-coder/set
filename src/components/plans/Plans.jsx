@@ -1,7 +1,9 @@
 import React from 'react'
 import './plans.css'
+import { TiTick } from 'react-icons/ti';
 
 const Plans = () => {
+    const label = "switch"
     return (
         <>
             <div className="plans-container">
@@ -17,12 +19,12 @@ const Plans = () => {
                                     <div className="plan-option-details">
                                         <h5>Everything in the starter plan + powerfull tools for writing full length content (like blog posts) with added controls and flexibility</h5>
                                         <div className="plan-options-benefits">
-                                            <p>Compose and Command features</p>
-                                            <p>Google docs and style editor</p>
-                                            <p>Maximum content look-back</p>
-                                            <p>increased limit on templete</p>
-                                            <p>Grows with our team</p>
-                                            <p>Support Chat</p>
+                                            <p><TiTick /> Compose and Command features</p>
+                                            <p><TiTick /> Google docs and style editor</p>
+                                            <p><TiTick /> Maximum content look-back</p>
+                                            <p><TiTick /> increased limit on templete</p>
+                                            <p><TiTick /> Grows with our team</p>
+                                            <p><TiTick /> Support Chat</p>
                                         </div>
                                     </div>
                                 </div>
@@ -43,10 +45,10 @@ const Plans = () => {
                                     <div className="plan-option-details">
                                         <h5>Access to all basic templete</h5>
                                         <div className="plan-options-benefits">
-                                            <p>Compose and Command features</p>
-                                            <p>Google docs and style editor</p>
-                                            <p>Maximum content look-back</p>
-                                            <p>increased limit on templete</p>
+                                            <p><TiTick /> Compose and Command features</p>
+                                            <p><TiTick /> Google docs and style editor</p>
+                                            <p><TiTick /> Maximum content look-back</p>
+                                            <p><TiTick /> increased limit on templete</p>
                                         </div>
                                     </div>
                                 </div>
@@ -73,61 +75,68 @@ const Plans = () => {
                     </div>
                 </div>
                 <div className="review-container">
-                <div className="review-header">
-                    <span>Bill annually</span>
-                    <span>Bill monthly</span>
-                </div>
-                <div className="review-card">
-                    <h3 className='review-card-title'>Review Changes</h3>
-                    <span className='review-card-text'>Pay anually & get 3 months free</span>
-                    <div className="review-boxes">
-                        <div className="review-box">
-                            <div className="review-box-left">
-                            <h3 className="review-box-title">PLAN TYPE</h3>
-                            <h4 className="review-box-text">Starter</h4>
-                            </div>
-
-                            <div className="review-box-right">
-                                <span>$29/mon</span>
-                            </div>
+                    <div className="review-header">
+                        <span>Bill annually</span> <div className="toggle-switch">
+                            <input type="checkbox" className="checkbox"
+                                name={label} id={label} />
+                            <label className="label" htmlFor={label}>
+                                <span className="inner" />
+                                <span className="switch" />
+                            </label>
                         </div>
-                        <div className="review-box">
-                            <div className="review-box-left">
-                            <h3 className="review-box-title">Credits</h3>
-                            <h4 className="review-box-text">29,000/mon</h4>
-                            </div>
-
-                            <div className="review-box-right">
-                                <span>included</span>
-                            </div>
-                        </div>
-                        <div className="review-box">
-                            <div className="review-box-left">
-                            <h3 className="review-box-title">Total</h3>
-                            </div>
-
-                            <div className="review-box-right">
-                                <span>$29/mon</span>
-                            </div>
-                        </div>
-                        <div className="review-box">
-                            <div className="review-box-left">
-                            <h3 className="end-review-box-title">Due Today</h3>
-                            </div>
-
-                            <div className="end-review-box-right">
-                                <span>$0</span>
-                            </div>
-                        </div>
-
-                        <button className='review-confirm'>
-                            Confirm Changes
-                        </button>
+                        <span>Bill monthly</span>
                     </div>
-                </div>
+                    <div className="review-card">
+                        <h3 className='review-card-title'>Review Changes</h3>
+                        <span className='review-card-text'>Pay anually & get 3 months free</span>
+                        <div className="review-boxes">
+                            <div className="review-box">
+                                <div className="review-box-left">
+                                    <h3 className="review-box-title">PLAN TYPE</h3>
+                                    <h4 className="review-box-text">Starter</h4>
+                                </div>
 
-                <h4 className="payment-text"> Payments are secured by stripe</h4>
-            </div>
+                                <div className="review-box-right">
+                                    <span>$29/mon</span>
+                                </div>
+                            </div>
+                            <div className="review-box">
+                                <div className="review-box-left">
+                                    <h3 className="review-box-title">Credits</h3>
+                                    <h4 className="review-box-text">29,000/mon</h4>
+                                </div>
+
+                                <div className="review-box-right">
+                                    <span>included</span>
+                                </div>
+                            </div>
+                            <div className="review-box">
+                                <div className="review-box-left">
+                                    <h3 className="review-box-title">Total</h3>
+                                </div>
+
+                                <div className="review-box-right">
+                                    <span>$29/mon</span>
+                                </div>
+                            </div>
+                            <div className="review-box">
+                                <div className="review-box-left">
+                                    <h3 className="end-review-box-title">Due Today</h3>
+                                </div>
+
+                                <div className="end-review-box-right">
+                                    <span>$0</span>
+                                </div>
+                            </div>
+
+                            <button className='review-confirm'>
+                                <TiTick /> Confirm Changes
+                            </button>
+                        </div>
+                    </div>
+
+                    <h4 className="payment-text"> Payments are secured by stripe</h4>
+                </div>
 
             </div>
 
