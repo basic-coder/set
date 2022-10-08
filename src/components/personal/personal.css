@@ -7,6 +7,7 @@
     padding: 30px;
     background-color: #fff;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 .personal-box{
     display: flex;
@@ -43,7 +44,7 @@
     margin-top: 5px;
 }
 .personal-save{
-    padding: 10px 20px;
+    padding: 7px 20px;
     border-radius: 10px;
     border: none;
     outline: none;

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Billings from "../../components/billings/Billings";
 import Personal from "../../components/personal/Personal";
-import Plans from "../../components/plans/Plans";
 import Usage from "../../components/usage/Usage";
 import './settings.css'
 
@@ -36,11 +35,9 @@ const Settings = () => {
             </div>
             <div className="settings-container">
             {
-               Component && <Component/>
+               Component && <Component />
             }
-            {/* {
-              <Plans />
-            } */}
+            
             </div>
             
         </div>
