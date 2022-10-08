@@ -26,21 +26,21 @@ const Settings = () => {
         <div className="settings-options">
             <div className="settings-top">
             <h2>Settings</h2>
-            {/* <ul className="settings-tabs">
+            <ul className="settings-tabs">
                 <li className="settings-tabs" onClick={() =>setTabs('Personal')}>Personal</li>
                 <li className="settings-tabs" onClick={() =>setTabs('Billings')}>Billings</li>
                 <li className="settings-tabs" onClick={() =>setTabs('Usage')}>Usage</li>
                 <li className="settings-tabs">Elements</li>
                 <li className="settings-tabs">Plans</li>
-            </ul> */}
+            </ul>
             </div>
             <div className="settings-container">
-            {/* {
-               Component && <Component/>
-            } */}
             {
-              <Plans />
+               Component && <Component/>
             }
+            {/* {
+              <Plans />
+            } */}
             </div>
             
         </div>

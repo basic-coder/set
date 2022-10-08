@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" exact element={<Settings />} />
+        <Route path="/stripe" exact element={<Settings />} />
       </Routes>
     </div>
   );
