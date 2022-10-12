@@ -81,7 +81,7 @@ const Settings = () => {
       <div className="settings">
         <div className="nav">
         <div>
-      {['left', 'right', 'top', 'bottom'].map((anchor) => (
+      {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
           <Drawer
